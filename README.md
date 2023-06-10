@@ -18,7 +18,7 @@ To run the pipeline you must clone this repo
 
 and run the following command inside the *code-challenge-nextflow-wdl-annotation* folder
 
-You must have <code>miniwdl</code> installed on your system, you can get it via <code>pip install miniwdl</code>.  
+You must have <code>miniwdl</code> installed on your system, you can get it via <code>pip install miniwdl</code>  
 
 <code> miniwdl run ./lb_challenge.wdl InputVcf=./VCFsubset.vcf </code>
 
