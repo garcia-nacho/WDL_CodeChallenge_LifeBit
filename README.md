@@ -17,7 +17,8 @@ and run the following command inside the *code-challenge-nextflow-wdl-annotation
 
 <code> miniwdl run ./lb_challenge.wdl InputVcf=./VCFsubset.vcf </code>
    
-Note that you need <code>miniwdl</code> installed on your system, you can get it via <code>pip install miniwdl</code> 
+Note that you need <code>miniwdl</code> installed on your system, you can get it via <code>pip install miniwdl</code>    
+   
 <img src="/wdl.png" width="700"> 
 
 Interestingly, the same wdl code doesn't work when using Cromwell (v.85). This is because under Cromwell the input files for the last process are located inside subfolders and the R script can't find them. This behaviour is different from Miniwdl where all the files are located together inside the same folder. This is which is what the R script expects. In other words, Miniwdl's behaviour is the same as in NextFlow and different from Cromwell. 
