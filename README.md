@@ -17,8 +17,16 @@ To run the pipeline you must clone this repo
 <code>git clone garcia-nacho code-challenge-nextflow-wdl-annotation</code>
 
 and run the following command inside the *code-challenge-nextflow-wdl-annotation* folder
-   
-<code>nextflow lb_challenge.nf --input VCFsubset.vcf --cores 10</code>   
+
+You must have cromwell-85 on your system.   
+
+<code>java -jar /your/path/to/cromwell/cromwell-85.jar run lb_challenge.wdl --inputs vep_inputs.json </code>   
+
+Alternatively you can use miniwdl   
+
+<code> miniwdl run ./lb_challenge.wdl InputVcf=./VCFsubset.vcf </code>
+
+Interestingly, the same code doesn't work when using cromwell (v.85). The input files for the last process are located inside subfolders and the R script can't find them. This behaviour is different from miniwdl where all the files are located together inside the same folder, which is what the R script expects (Miniwdl's behaviour is the same as in NextFlow).
   
 ## Input
 As input I have subsampled a vcf file from the 1000 genomes project: 1000Genomes/trio/HG00702_SH089_CHS. To speed up the process of testing I have just gathered a few variants from each chromosome as required. 
