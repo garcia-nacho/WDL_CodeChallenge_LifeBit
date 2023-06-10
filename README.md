@@ -45,3 +45,4 @@ On the last step, the pipeline gathers all results and generate an unique vcf fi
 
 ## Output   
 The output file will be called <code>Results.vcf</code> and the md5sum is <code>2a5f79e048b74f8ab98f10b47725c7dc</code>
+This output file will be located inside the <code>./XXXX_UUUU_RunVep/out/gather_vep.finaloutput</code> folder.
