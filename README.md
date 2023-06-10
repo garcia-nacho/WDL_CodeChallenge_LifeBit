@@ -22,7 +22,7 @@ Note that you need <code>miniwdl</code> installed on your system, you can get it
 Interestingly, the same wdl code doesn't work when using Cromwell (v.85). This is because under Cromwell the input files for the last process are located inside subfolders and the R script can't find them. This behaviour is different from Miniwdl where all the files are located together inside the same folder. This is which is what the R script expects. In other words, Miniwdl's behaviour is the same as in NextFlow and different from Cromwell. 
   
 ## Input
-As input I have subsampled a vcf file from the 1000 genomes project: 1000Genomes/trio/HG00702_SH089_CHS. To speed up the process of testing I have just gathered a few variants from each chromosome as required. 
+As input, I have subsampled a vcf file from the 1000 genomes project: 1000Genomes/trio/HG00702_SH089_CHS. To speed up the process of testing I have just gathered a few variants from each chromosome as required. 
    
 ## Under the hood   
 The command runs a script that splits the vcf file used as input in several parts. Given the size of the vcf used as input, the size of the parts is just 10 variants per file. This size can be easily adjusted.
