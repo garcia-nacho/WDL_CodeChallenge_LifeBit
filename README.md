@@ -18,11 +18,7 @@ To run the pipeline you must clone this repo
 
 and run the following command inside the *code-challenge-nextflow-wdl-annotation* folder
 
-You must have cromwell-85 on your system.   
-
-<code>java -jar /your/path/to/cromwell/cromwell-85.jar run lb_challenge.wdl --inputs vep_inputs.json </code>   
-
-Alternatively you can use miniwdl   
+You must have <code>miniwdl</code> installed on your system, you can get it via <code>pip install miniwdl</code>.  
 
 <code> miniwdl run ./lb_challenge.wdl InputVcf=./VCFsubset.vcf </code>
 
