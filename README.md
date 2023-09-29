@@ -1,4 +1,4 @@
-# Code-challenge-wdl-vep-annotation
+# LifeBit code challenge
 
 ## Info
 The pipeline uses two docker containers:   
